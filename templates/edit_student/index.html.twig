@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Student{% endblock %}
+
+{% block body %}
+
+<form method="POST" action="{{ path('edit_student') }}"> <!-- , {'id': student.id} -->
+    {{ form_widget(form) }}
+</form>
+
+
+{% endblock %}

@@ -3,3 +3,19 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+list_index:
+    path: /list
+    controller: App\Controller\WelcomeController::index
+
+edit_student:
+    path: /edit_student
+    controller: App\Controller\StudentController::edit
+
+edit_course:
+    path: /edit_course
+    controller: App\Controller\CourseController::edit
+
+edit_class:
+    path: /edit_class
+    controller: App\Controller\ClassController::edit

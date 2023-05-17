@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Add Student{% endblock %}
+
+
+{% block body %}
+<section style="display: flex; flex-direction: column; align-items: center;">
+    <h1>Add new Student</h1>
+    <div>
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Save">
+    {{ form_end(form) }}
+    </div>
+</section>
+{% endblock %}

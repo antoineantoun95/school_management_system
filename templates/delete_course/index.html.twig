@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Delete Course{% endblock %}
+
+{% block body %}
+<section style="display: flex; flex-direction: column; align-items: center;">
+    <h1>Delete a Course</h1>
+    <div>
+        {{ form_start(form) }}
+            {{ form_row(form.id) }}
+            {{ form_row(form.delete) }}
+        {{ form_end(form) }}
+    </div>
+</section>
+{% endblock %}

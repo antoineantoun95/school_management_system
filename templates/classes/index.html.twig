@@ -1,0 +1,39 @@
+
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Classes{% endblock %}
+
+{% block body %}
+
+<div class="table-wrapper">
+  <table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Class Name</th>
+      <th>Section</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for class in classes_data %}
+    <tr>
+      <td>{{ class.id }}</td>
+      <td>{{ class.classname }}</td>
+      <td>{{ class.classsection }}</td>
+    </tr>    
+  {% endfor %}
+
+  </tbody>
+</table>
+</div>
+
+{% endblock %}
+
+{% block bottomrighBTN %}
+    <div style="position: fixed; right: 30px; bottom: 20px">
+      <a href="edit_class" class="btn btn-primary">Edit</a>
+      <a href="#" class="btn btn-primary">Details</a>
+      <a href="delete_class" class="btn btn-primary">Delete</a>
+    </div>
+{% endblock %}
